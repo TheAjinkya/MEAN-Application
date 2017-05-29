@@ -1,0 +1,15 @@
+<html ng-app>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script><head>
+<body ng-controller="MyFunction">
+  <h1>This is the HTML File. </h1>
+    <label>First Name</label>
+    <input type="text" ng-model="firstName" placeholder="Enter the firstName">
+    <h1>{{firstName}}</h1>
+</body>
+    <script type="text/javascript">
+   function MyFunction($scope){
+       $scope.firstName = "Ajinkya"
+   };     
+    </script>
+</html>

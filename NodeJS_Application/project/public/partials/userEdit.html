@@ -1,0 +1,54 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Users Details</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class=" col-md-6">
+                <label>First Name :</label>
+                <input type="name" ng-model="user.firstName" class="form-control">	
+            </div>
+            <div class=" col-md-6">
+                <label>Last Name :</label>
+                <input type="name" ng-model="user.lastName" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col-md-6">
+                <label>Email :</label>
+                <input type="name" ng-model="user.emailId" class="form-control">
+            </div>
+			<div class=" col-md-6">
+                <label>Conatct :</label>
+                <input type="number"  ng-model="user.contact" class="form-control">
+            </div>
+	</div>
+	<div class="row">
+            <div class=" col-md-6">
+                <label>Designation :</label>
+                <input type="name"  ng-model="user.designation" class="form-control">
+            </div>
+			<div class=" col-md-6">
+                <label>Gender :</label>
+                <label>		
+				<input type="radio" ng-model="user.gender" class="form-control">
+            </label>
+			</div>
+	</div>
+	
+		<div class="row">
+            <div class=" col-md-6">
+                <label>City :</label>
+                <input type="name"  ng-model="user.city" class="form-control">
+            </div>
+		
+	</div>
+	
+    </div>
+</div>
+<div class="row">
+	<div class= "col-md-12">
+	<button class="btn btn-sm btn-success" ng-show="isNew()" ng-click="saveUser()" >Save</button>
+	<button class="btn btn-sm btn-success" ng-show="!isNew()" ng-click="updateUser()" >Update</button>
+	<button class="btn btn-sm btn-default" ng-click="cancel()" >Cancel</button>
+	</div>
+
+</div>

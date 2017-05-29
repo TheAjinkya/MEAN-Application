@@ -1,0 +1,22 @@
+{
+  "name": "instangular",
+  "version": "1.0.0",
+  "description": "Ajinkya Chanshetty Project",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bower": "^1.8.0",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.3",
+    "express": "^4.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.4",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajinkya Chanshetty",
+  "license": "ISC"
+}

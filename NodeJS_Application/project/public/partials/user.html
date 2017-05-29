@@ -1,0 +1,39 @@
+<div>
+    <div class="row">
+	<div class="col-md-12">
+		<button class="btn btn-sm btn-primary pull-right" ng-click="editUser('new')"> Add</button>	
+	</div>
+    </div>	
+    <br/>
+    <table class="table table-stripped table-hover">
+        <thead>
+            <tr>
+                <th>First Name <button class="btn btn-xs btn-primary" ng-click="sortByFirstName()"> Sort</button></th>
+                <th>Last Name <button class="btn btn-xs btn-primary" ng-click="sortByLastName()"> Sort</button></th>
+				<th>Email ID <button class="btn btn-xs btn-primary" ng-click="sortByEmailId()"> Sort</button></th>
+				<th>Contact <button class="btn btn-xs btn-primary" ng-click="sortByContact()"> Sort</button></th>
+				<th>Gender <button class="btn btn-xs btn-primary" ng-click="sortByGender()"> Sort</button></th>
+				<th>Designation <button class="btn btn-xs btn-primary" ng-click="sortByDesignation()"> Sort</button></th>
+				<th>City <button class="btn btn-xs btn-primary" ng-click="sortByCity()"> Sort</button></th>
+		<th>Action</th>
+            </tr>
+        </thead>
+        <tr>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td ng-dblclick="viewUser(user._id)">{{user.firstName}}</td>
+                    <td ng-dblclick="viewUser(user._id)">{{user.lastName}}</td>
+					<td ng-dblclick="viewUser(user._id)">{{user.emailId}}</td>
+					<td ng-dblclick="viewUser(user._id)">{{user.contact}}</td>
+					<td ng-dblclick="viewUser(user._id)">{{user.gender}}</td>
+					<td ng-dblclick="viewUser(user._id)">{{user.designation}}</td>
+					<td ng-dblclick="viewUser(user._id)">{{user.city}}</td>
+                    <td>
+			<button class="btn btn-xs btn-primary" ng-click="viewUser(user._id)"> View</button>
+			<button class="btn btn-xs btn-info" ng-click="editUser(user._id)"> Edit</button>
+			<button class="btn btn-xs btn-danger" ng-click="deleteUser(user._id)"> Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+</div>
